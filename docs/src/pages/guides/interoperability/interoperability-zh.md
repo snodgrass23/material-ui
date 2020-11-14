@@ -53,24 +53,18 @@ export default function PlainCssSlider() {
 
 ```jsx
 import * as React from 'react';
-import { CacheProvider } from '@emotion/core';
+import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 
-const head = document.getElementsByTagName('head')[0];
-
-const emotionContainer = head.insertBefore(
-  document.createElement('STYLE'),
-  head.firstChild,
-);
-
 const cache = createCache({
-  container: emotionContainer,
+  key: 'css',
+  prepend: true,
 });
 
 export default function PlainCssPriority() {
   return (
     <CacheProvider value={cache}>
-      {/* 你的组件树。 现在你可以覆盖 Material-UI 的样式。 */}
+      {/* Your component tree. 现在你可以覆盖 Material-UI 的样式。 */}
     </CacheProvider>
   );
 }
@@ -192,24 +186,18 @@ export default function GlobalCssSlider() {
 
 ```jsx
 import * as React from 'react';
-import { CacheProvider } from '@emotion/core';
+import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 
-const head = document.getElementsByTagName('head')[0];
-
-const emotionContainer = head.insertBefore(
-  document.createElement('STYLE'),
-  head.firstChild,
-);
-
 const cache = createCache({
-  container: emotionContainer,
+  key: 'css',
+  prepend: true,
 });
 
 export default function GlobalCssPriority() {
   return (
     <CacheProvider value={cache}>
-      {/* 你的组件树。 现在你可以覆盖 Material-UI 的样式。 */}
+      {/* Your component tree. 现在你可以覆盖 Material-UI 的样式。 */}
     </CacheProvider>
   );
 }
@@ -421,24 +409,18 @@ export default function CssModulesSlider() {
 
 ```jsx
 import * as React from 'react';
-import { CacheProvider } from '@emotion/core';
+import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
 
-const head = document.getElementsByTagName('head')[0];
-
-const emotionContainer = head.insertBefore(
-  document.createElement('STYLE'),
-  head.firstChild,
-);
-
 const cache = createCache({
-  container: emotionContainer,
+  key: 'css',
+  prepend: true,
 });
 
 export default function CssModulesPriority() {
   return (
     <CacheProvider value={cache}>
-      {/* 你的组件树 现在你可以覆盖 Material-UI 的样式。 */}
+      {/* Your component tree. 现在你可以覆盖 Material-UI 的样式。 */}
     </CacheProvider>
   );
 }
@@ -540,7 +522,7 @@ Emotion 的 **css()** 方法与 Material-UI 无缝协作。
 
 ```jsx
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
+import { jsx, css } from '@emotion/react';
 import Slider from '@material-ui/lab/SliderStyled';
 
 export default function EmotionCSS() {
