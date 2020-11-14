@@ -316,8 +316,7 @@ const classes = makeStyles(theme => ({
   +<BottomNavigation onChange={(event: React.SyntheticEvent) => {}} />
   ```
 
-
-  ###  Box
+###  Box
 
 - system 属性在 v5 中已废弃且被 `sx` 属性取代。
 
@@ -834,18 +833,29 @@ const classes = makeStyles(theme => ({
 
 ### TextField
 
-- 最佳实践是将固定文本区域高度行为与动态文本区域高度行为分开。 要达到此效果，你需要像下面的示例一样使用 `minRows` 属性：
+- Change the default variant from `standard` to `outlined`. Standard has been removed from the Material Design Guidelines.
 
   ```diff
-  -<TextField rows={2} maxRows={5} />
-  +<TextField minRows={2} maxRows={5} />
+  -<TextField value="Standard" />
+  -<TextField value="Outlined" variant="outlined" />
+  +<TextField value="Standard" variant="standard" />
+  +<TextField value="Outlined" />
   ```
+
+[This codemod](https://github.com/mui-org/material-ui/tree/next/packages/material-ui-codemod#textfield-variant-prop) will automatically update your code.
 
 - 为保持与 HTML 属性的一致性，我们将 `rowsMax` 属性重命名为 `maxRows`。
 
   ```diff
   -<TextField rowsMax={6}>
   +<TextField maxRows={6}>
+  ```
+
+- 最佳实践是将固定文本区域高度行为与动态文本区域高度行为分开。 要达到此效果，你需要像下面的示例一样使用 `minRows` 属性：
+
+  ```diff
+  -<TextField rows={2} maxRows={5} />
+  +<TextField minRows={2} maxRows={5} />
   ```
 
 - 更改自定义 `inputComponent` 中的 ref 转发期望值 该组件应该转发 `ref` 属性，而不是 `inputRef` 属性。
