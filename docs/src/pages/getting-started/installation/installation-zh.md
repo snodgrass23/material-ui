@@ -9,11 +9,11 @@ Material-UI 可以通过 [npm 包](https://www.npmjs.com/package/@material-ui/co
 若想安装并写入您的 `package.json` 依赖包，请运行以下命令：
 
 ```sh
-// 使用 npm
-npm install @material-ui/core@next @emotion/core @emotion/styled
+// with npm
+npm install @material-ui/core@next @emotion/react @emotion/styled
 
-// 使用 yarn
-yarn added @material-ui/core@nexotion/core @emotion/styled
+// with yarn
+yarn add @material-ui/core@next @emotion/react @emotion/styled
 ```
 
 请注意，安装依赖于 [react](https://www.npmjs.com/package/react) 的 16.8.0 及以上版本，和 [react-dom](https://www.npmjs.com/package/react-dom) >= 16.8.0 及以上版本。
