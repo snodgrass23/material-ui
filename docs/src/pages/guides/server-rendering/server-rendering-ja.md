@@ -94,7 +94,7 @@ const app = express();
 ```js
 import createCache from '@emotion/cache';
 
-const cache = createCache();
+const cache = createCache({ key: 'css' });
 
 export default cache;
 ```
@@ -183,7 +183,7 @@ function renderFullPage(html, css) {
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from '@material-ui/core/styles';
-import { CacheProvider } from '@emotion/core';
+import { CacheProvider } from '@emotion/react';
 import App from './App';
 import theme from './theme';
 import cache from './cache';
