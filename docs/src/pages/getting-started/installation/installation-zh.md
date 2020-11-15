@@ -9,10 +9,10 @@ Material-UI 可以通过 [npm 包](https://www.npmjs.com/package/@material-ui/co
 若想安装并写入您的 `package.json` 依赖包，请运行以下命令：
 
 ```sh
-// with npm
+// 使用 npm
 npm install @material-ui/core@next @emotion/react @emotion/styled
 
-// with yarn
+// 使用 yarn
 yarn add @material-ui/core@next @emotion/react @emotion/styled
 ```
 
