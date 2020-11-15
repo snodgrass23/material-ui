@@ -833,7 +833,7 @@ const classes = makeStyles(theme => ({
 
 ### TextField
 
-- Change the default variant from `standard` to `outlined`. Standard has been removed from the Material Design Guidelines.
+- 将默认的变量从 `standard` 更改为 `outlined`。 Standard 在 Material Design 指南中已被删除。
 
   ```diff
   -<TextField value="Standard" />
@@ -842,7 +842,7 @@ const classes = makeStyles(theme => ({
   +<TextField value="Outlined" />
   ```
 
-[This codemod](https://github.com/mui-org/material-ui/tree/next/packages/material-ui-codemod#textfield-variant-prop) will automatically update your code.
+[This codemod](https://github.com/mui-org/material-ui/tree/next/packages/material-ui-codemod#textfield-variant-prop) 可以自动升级你的代码。
 
 - 为保持与 HTML 属性的一致性，我们将 `rowsMax` 属性重命名为 `maxRows`。
 
