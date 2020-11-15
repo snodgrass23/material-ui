@@ -197,7 +197,7 @@ const cache = createCache({
 export default function GlobalCssPriority() {
   return (
     <CacheProvider value={cache}>
-      {/* Your component tree. 现在你可以覆盖 Material-UI 的样式。 */}
+      {/* 这里编写你的组件树。 现在你可以覆盖 Material-UI 的样式。 */}
     </CacheProvider>
   );
 }
@@ -420,7 +420,7 @@ const cache = createCache({
 export default function CssModulesPriority() {
   return (
     <CacheProvider value={cache}>
-      {/* Your component tree. 现在你可以覆盖 Material-UI 的样式。 */}
+      {/* 这里编写你的组件 现在你可以覆盖 Material-UI 的样式。 */}
     </CacheProvider>
   );
 }
