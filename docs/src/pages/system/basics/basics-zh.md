@@ -104,7 +104,7 @@ return (
     minWidth: 300,
   }}
 >
-  <Box sx={{ color: 'text.secondary' }}>Sessions</Box>
+  <Box sx={{ color: 'text.secondary' }}>会话</Box>
   <Box sx={{ color: 'text.primary', fontSize: 34, fontWeight: 'fontWeightMedium' }}>
     98.3 K
   </Box>
@@ -123,7 +123,7 @@ return (
     18.77%
   </Box>
   <Box sx={{ color: 'text.secondary', display: 'inline', fontSize: 12 }}>
-    vs last week
+    和上周相比
   </Box>
 </Box>
 ```
