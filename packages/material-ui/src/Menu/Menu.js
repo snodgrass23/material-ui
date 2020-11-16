@@ -41,6 +41,7 @@ export const styles = {
 const Menu = React.forwardRef(function Menu(props, ref) {
   const {
     autoFocus = true,
+    captureTabKey = true,
     children,
     classes,
     disableAutoFocusItem = false,
@@ -78,7 +79,9 @@ const Menu = React.forwardRef(function Menu(props, ref) {
 
   const handleListKeyDown = (event) => {
     if (event.key === 'Tab') {
-      event.preventDefault();
+      if (captureTabKey) {
+        event.preventDefault();
+      }
 
       if (onClose) {
         onClose(event, 'tabKeyDown');
