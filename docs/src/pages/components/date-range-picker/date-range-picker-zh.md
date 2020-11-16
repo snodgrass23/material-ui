@@ -11,7 +11,7 @@ materialDesign: https://material.io/components/date-pickers
 <p class="description">日期选择器让用户选择一系列的日期。
 </p>
 
-> ⚠️⚠️ 该组件不是稳定版本，**不适用**于生产环境中。 ⚠️⚠️ <br /><br /> 日期范围选择将在今后的几个月内提供生产可用的稳定版本，并且作为 Material-UI 社区版本（MIT license）的付费扩展（商业许可）的一部分。 该付费扩展将包含高级组件（丰富的数据网格、日期范围选择器、可拖拽的树形视图 & drop 等等）。 你现在可以以实惠的价格 [提前使用](https://material-ui.com/store/items/material-ui-x/)。
+> ⚠️ Premium component <br /><br /> The date range picker is intended for Material-UI X, a commercial set of advanced components built on top of the community edition (MIT license) of Material-UI. <br /><br /> This paid extension will include more advanced components (rich data grid, date range picker, tree view drag & drop, etc.). 你现在可以以实惠的价格 [提前使用](https://material-ui.com/store/items/material-ui-x/)。
 
 日期范围选择器让用户选择一个日期范围。
 
